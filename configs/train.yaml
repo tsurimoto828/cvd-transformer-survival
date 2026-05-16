@@ -1,0 +1,80 @@
+seed: 0
+
+data:
+  train_path: data/hhsa_train.csv
+  valid_path: data/hhsa_valid.csv
+  require_complete_cases: true
+  time_unit: years
+  categorical_columns:
+    - sex
+    - urine_protein
+    - urine_glucose
+    - ecg_abnormality
+    - eye_exam
+    - anti_ht_med
+    - insulin_med
+    - anti_chol_med
+    - past_anemia
+    - smoker
+    - weight_gain
+    - regular_exercise
+    - daily_exercise
+    - fast_walking
+    - eating_speed
+    - late_meals
+    - skip_breakfast
+    - habitual_drinker
+    - alcohol_consumption
+    - enough_sleep
+    - lifestyle_change
+    - health_interest
+  continuous_columns:
+    - age
+    - height
+    - weight
+    - bmi
+    - waist
+    - sbp
+    - dbp
+    - rbc
+    - hemoglobin
+    - hematocrit
+    - ast
+    - alt
+    - ggt
+    - total_chol
+    - hdl_c
+    - triglyceride
+    - ldl_c
+    - glucose
+    - hba1c
+    - creatinine
+    - egfr
+  time_column: time
+  event_column: f
+  bins: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+model:
+  dim: 256
+  depth: 3
+  heads: 4
+  transformer_dropout: 0.3
+  mlp_hidden_layers: [128, 64]
+  dropout: 0.3
+  pooling: cls
+
+training:
+  device: cpu
+  epochs: 100
+  batch_size: 256
+  learning_rate: 0.001
+  weight_decay: 1.0e-5
+  patience: 10
+  num_threads: 1
+
+output:
+  output_dir: results/manuscript_model
+  model_filename: model_survival.pth
+  metadata_filename: metadata.json
+  log_filename: training_log.csv
+  loss_plot_filename: loss_curve.png

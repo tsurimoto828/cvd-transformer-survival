@@ -1,0 +1,9 @@
+inference:
+  artifact_dir: results/uploaded_training
+  metadata_filename: metadata.json
+  model_filename: model_survival.pth
+  test_path: data/cvd_transformer_survival_formatted_valid.csv
+  output_path: results/uploaded_training/valid_predictions.csv
+  batch_size: 256
+  device: cuda
+  num_threads: 1

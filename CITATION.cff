@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+title: "Transformer-Based Survival Model for Cardiovascular Risk Prediction"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "Tsurimoto"
+    given-names: "Shota"
+version: "0.1.0"
+url: "https://github.com/tsurimoto828/cvd-transformer-survival"
+repository-code: "https://github.com/tsurimoto828/cvd-transformer-survival"
+license: "BSD-3-Clause"
+abstract: >
+  This repository provides the implementation of a Transformer-based discrete-time survival model for
+  cardiovascular risk prediction using tabular health checkup data. The model takes categorical and
+  continuous clinical variables as input and estimates interval-wise survival probabilities for future
+  cardiovascular disease events.
+preferred-citation:
+  type: manuscript
+  authors:
+    - family-names: "Tsurimoto"
+      given-names: "Shota"
+    - family-names: "Nomura"
+      given-names: "Akihiro"
+    - family-names: "Nagata"
+      given-names: "Yoshiki"
+    - family-names: "Kosaka"
+      given-names: "Yuki"
+    - family-names: "Noguchi"
+      given-names: "Masahiro"
+    - family-names: "Hirai"
+      given-names: "Tadayuki"
+    - family-names: "Takeji"
+      given-names: "Yasuaki"
+    - family-names: "Tada"
+      given-names: "Hayato"
+    - family-names: "Sakata"
+      given-names: "Kenji"
+    - family-names: "Usui"
+      given-names: "Soichiro"
+    - family-names: "Okada"
+      given-names: "Shogo"
+    - family-names: "Takamura"
+      given-names: "Masayuki"
+  title: "Transformer-Based Survival Model for Cardiovascular Risk Prediction from Longitudinal Health Checkup Data"
+  status: "under preparation"

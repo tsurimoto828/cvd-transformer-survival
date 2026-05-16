@@ -1,0 +1,9 @@
+inference:
+  artifact_dir: results/manuscript_model
+  metadata_filename: metadata.json
+  test_path: examples/manuscript_example_input.csv
+  output_path: results/manuscript_model/manuscript_example_predictions.csv
+  batch_size: 256
+  device: cpu
+  num_threads: 1
+  id_column: participant_id
