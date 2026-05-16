@@ -13,7 +13,6 @@ Email: tsurimoto@staff.kanazawa-u.ac.jp
 ## Related manuscript
 
 **Title:** Transformer-Based Survival Model for Cardiovascular Risk Prediction from 15-year Longitudinal Health Checkup Data  
-**Status:** under preparation
 
 **Authors:**  
 Shota Tsurimoto, Akihiro Nomura, Yoshiki Nagata, Yuki Kosaka, Masahiro Noguchi, Tadayuki Hirai, Yasuaki Takeji, Hayato Tada, Kenji Sakata, Soichiro Usui, Shogo Okada, Masayuki Takamura
